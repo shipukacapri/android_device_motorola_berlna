@@ -14,6 +14,15 @@ $(call inherit-product, device/motorola/berlna/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# AxionOS Flags
+AXION_MAINTAINER := Shipu
+AXION_PROCESSOR := Snapdragon_778G_5G
+TARGET_BOOT_ANIMATION_RES := 1080
+AXION_CAMERA_REAR_INFO := 108,8,2
+AXION_CAMERA_FRONT_INFO := 32
+TARGET_ENABLE_BLUR := true
+TARGET_INCLUDE_AXFX := true
+
 PRODUCT_NAME := lineage_berlna
 PRODUCT_DEVICE := berlna
 PRODUCT_MANUFACTURER := motorola
