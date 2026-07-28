@@ -7,11 +7,6 @@
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
 
-# Moto Camera 4
-TARGET_MOTCAMERA4 := berlna
-TARGET_USES_MOTCAMERA4 := true
-
-$(call inherit-product, vendor/motorola/MotCamera4-lahaina/motcamera4.mk)
 
 # Screen
 TARGET_SCREEN_DENSITY := 400
