@@ -10,6 +10,11 @@ TARGET_SCREEN_WIDTH := 1080
 # Screen
 TARGET_SCREEN_DENSITY := 400
 
+# Moto Camera 4
+TARGET_MOTCAMERA4 := berlna
+
+$(call inherit-product, vendor/motorola/MotCamera4-lahaina/motcamera4.mk)
+
 # AAPT
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := 400dpi
