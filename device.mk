@@ -29,6 +29,9 @@ PRODUCT_PACKAGES += \
     SystemUIResDevice \
     WifiResDevice
 
+# Overlay Voltage Maintainer
+PRODUCT_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-voltage
+
 # Audio
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/sku_yupik/audio_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_yupik/audio_platform_info.xml \

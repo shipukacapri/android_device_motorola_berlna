@@ -11,10 +11,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from berlna device
 $(call inherit-product, device/motorola/berlna/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common VoltageOS stuff.
+$(call inherit-product, vendor/voltage/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_berlna
+#VoltageOS Flags
+TARGET_BOOT_ANIMATION_RES := 720
+TARGET_FACE_UNLOCK_SUPPORTED := true
+
+PRODUCT_NAME := voltage_berlna
 PRODUCT_DEVICE := berlna
 PRODUCT_MANUFACTURER := motorola
 PRODUCT_BRAND := motorola
@@ -26,3 +30,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="berlna_global-user 13 T1RMS33.1-110-17-12 f7bcd-35c05 release-keys" \
     BuildFingerprint=motorola/berlna_global/berlna:13/T1RMS33.1-110-17-12/f7bcd-35c05:user/release-keys \
     DeviceProduct=berlna_global
+
+# Disable kernel VINTF enforcement for 5.4 kernel
+PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS := false
