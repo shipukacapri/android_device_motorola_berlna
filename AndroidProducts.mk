@@ -4,4 +4,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_berlna.mk
+    $(LOCAL_DIR)/infinity_berlna.mk
+
+COMMON_LUNCH_CHOICES := \
+    infinity_berlna-user \
+    infinity_berlna-userdebug \
+    infinity_berlna-eng

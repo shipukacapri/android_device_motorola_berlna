@@ -6,3 +6,10 @@ persist.nfc_cfg.config_file_name=libnfc-nci-st.conf
 
 # Telephony
 ril.subscription.types=RUIM
+
+# Infinity Specific Properties
+ro.infinity.soc=Snapdragon 778G 5G
+ro.infinity.camera=108MP(Main) + 8MP(Ultrawide) + 2MP(Depth) + 32MP(Front)
+ro.infinity.display=1080 x 2460, IPS LCD
+ro.infinity.battery=5000 mAh
+ro.product.marketname=Motorola edge 2021 
